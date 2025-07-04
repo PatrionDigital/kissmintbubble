@@ -6,8 +6,10 @@ const nextConfig: NextConfig = {
   
   // Enable server components
   experimental: {
-    serverComponentsExternalPackages: ["@supabase/supabase-js"],
+    // Other experimental features can go here
   },
+  // External packages that should be bundled with the server components
+  serverExternalPackages: ["@supabase/supabase-js"],
   
   // Configure images
   images: {
